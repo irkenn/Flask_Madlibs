@@ -1,3 +1,4 @@
+
 """Madlibs Stories."""
 
 
@@ -23,6 +24,7 @@ class Story:
 
         self.prompts = words
         self.template = text
+    
 
     def generate(self, answers):
         """Substitute answers into text."""
@@ -34,11 +36,9 @@ class Story:
 
         return text
 
-
 # Here's a story to get you started
 
-
-story = Story(
+new_story = Story(
     ["place", "noun", "verb", "adjective", "plural_noun"],
     """Once upon a time in a long-ago {place}, there lived a
        large {adjective} {noun}. It loved to {verb} {plural_noun}."""
